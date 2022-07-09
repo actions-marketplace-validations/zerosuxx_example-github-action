@@ -1,6 +1,9 @@
 name: 'Client Publish'
 description: 'Publish the client application'
-icon: arrow-up-circle
+branding:
+  icon: 'arrow-up-circle'  
+  color: 'green'
+
 inputs:
   target:
     description: 'Target environment'
