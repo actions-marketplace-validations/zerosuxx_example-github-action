@@ -13,4 +13,6 @@ runs:
   using: 'docker'
   image: 'docker://emarsys/client-publish:5.0.1'
   args:
-    - deploy --target-env ${{ inputs.target }}
+    - deploy
+    - --target-env
+    - ${{ inputs.target }}
