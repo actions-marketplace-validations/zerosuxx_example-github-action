@@ -1,1 +1,1 @@
-# zerosuxx-example-github-action
+# example-github-action
