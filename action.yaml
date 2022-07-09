@@ -1,0 +1,12 @@
+name: 'Client Publish'
+description: 'Publish the client application'
+inputs:
+  target:
+    description: 'Target environment'
+    required: true
+    default: 'production'
+runs:
+  using: 'docker'
+  image: 'docker://emarsys/client-publish:5.0.1'
+  args:
+    - deploy --target-env ${{ inputs.target }}
